@@ -1,0 +1,171 @@
+@font-face {
+  font-family: RobotoRegular;
+  src: url(../font/font/ROBOTO/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: CronosBold;
+  src: url(../font/font/CRONOS/CronosPro-Bold.otf );
+}
+
+@font-face {
+  font-family: CronosRegular;
+  src: url(../font/font/CRONOS/CronosPro-Regular.otf );
+}
+
+* {
+  font-family: CronosRegular;
+  box-sizing: border-box;
+  /*outline: 1px solid red;*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #faf7980e;
+}
+
+.navbar .nav-link {
+  color: rgb(0, 0, 0) !important;
+  font-family: CronosBold;
+}
+
+.navbar .nav-link:hover {
+  color: rgb(212,175,55) !important;
+}
+
+#logo_navbar {
+  width: 50%;
+  position: center;
+  height: auto;
+  filter: drop-shadow(1px 1px 20px rgba(212, 175, 55, 0.495) );
+}
+
+
+#contenedor_info {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  margin: 2rem;
+}
+
+/* Cada sección será un contenedor horizontal */
+.info-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+.noti{
+  max-width: 30px;
+} 
+img {
+  max-width: 300px;
+  height: auto;
+}
+
+
+/* Alinear el texto correctamente */
+.text-container {
+  flex: 1;
+}
+
+.info-section.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.info-section.reverse {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+/* Animación de texto */
+.text-container h1,
+.text-container p,
+.text-container ul {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.text-container.show h1,
+.text-container.show p,
+.text-container.show ul {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .info-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-container img {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+
+ #sidebar {
+        position: fixed;
+        top: 0;
+        left: -250px; /* Oculto inicialmente */
+        width: 250px;
+        height: 100%;
+        background-color: #f8f9fa;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+        padding: 20px;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+
+    #sidebar.active {
+        left: 0;
+    }
+
+    #overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        z-index: 999;
+    }
+
+    #overlay.active {
+        display: block;
+    }
+
+    .nav-profile {
+        cursor: pointer;
+    }
+
+    .nav-profile img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    #boton_panel {
+        border: none;
+    }
+
+    #boton_panel:hover {
+        color: rgb(212,175,55) !important;
+    }
+
+    .navbar .nav-link:hover {
+  color: rgb(212,175,55) !important;
+}
+#EstasListo {
+  color: rgb(212,175,55);
+}
