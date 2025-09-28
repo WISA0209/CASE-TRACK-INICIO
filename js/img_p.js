@@ -47,3 +47,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', animateOnScroll);
 
 document.addEventListener('DOMContentLoaded', animateOnScroll);
+
