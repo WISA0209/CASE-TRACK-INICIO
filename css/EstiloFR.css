@@ -110,3 +110,13 @@ body {
     color: rgb(212,175,55);
 }
 
+.terminos-container{
+    border: 1px solid rgb(212,175,55);
+    padding: 10px;
+}
+.terminos-scroll{
+    height: 80px;/*Altura del cuadro de texto*/
+    overflow-y: scroll;
+    padding:0.8px;
+    border: 0.5px solid rgb(212,175,55);
+}
