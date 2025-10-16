@@ -1,0 +1,122 @@
+@font-face {
+    font-family: RobotoRegular;
+    src: url(../font/font/ROBOTO/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: CronosBold;
+    src: url(../font/font/CRONOS/CronosPro-Bold.otf);
+}
+
+@font-face {
+    font-family: CronosRegular;
+    src: url(../font/font/CRONOS/CronosPro-Regular.otf);
+}
+
+* {
+    font-family: CronosRegular;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #faf7980e;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.registro-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(12, 25, 205, 0.556);
+    width: 100%;
+    max-width: 700px; /* más ancho para soportar 3 columnas */
+}
+
+.registro-container img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 50%;
+    height: auto;
+  filter: drop-shadow(1px 1px 20px rgba(212, 175, 55, 0.495) );
+}
+
+.registro-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid rgb(212,175,55);
+    border-radius: 5px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: rgb(10,40,120);
+    outline: none;
+}
+
+.form-group.full-width {
+    grid-column: span 3;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-group button:hover {
+    background-color: rgb(212,175,55);
+}
+
+.texto-pie {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #010101;
+}
+
+.texto-pie a {
+    color: rgb(212,175,55);
+}
+
+.terminos-container{
+    border: 1px solid rgb(212,175,55);
+    padding: 10px;
+}
+.terminos-scroll{
+    height: 80px;/*Altura del cuadro de texto*/
+    overflow-y: scroll;
+    padding:0.8px;
+    border: 0.5px solid rgb(212,175,55);
+}

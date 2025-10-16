@@ -1,0 +1,106 @@
+@font-face {
+    font-family: RobotoRegular;
+    src: url(../font/font/ROBOTO/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: CronosBold;
+    src: url(../font/font/CRONOS/CronosPro-Bold.otf);
+}
+
+@font-face {
+    font-family: CronosRegular;
+    src: url(../font/font/CRONOS/CronosPro-Regular.otf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: CronosRegular;
+}
+
+body {
+    background-image: url("/Imagenes/UNIPAZ.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: #0000000e;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.registro-container {
+      background-color: rgba(255, 255, 255, 0.65); /* blanco con 65% de opacidad */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(12, 25, 205, 0.3);
+      max-width: 400px;
+      width: 100%;
+}
+
+.registro-container img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 80%;
+    height: auto;
+  filter: drop-shadow(1px 1px 20px rgba(212, 175, 55, 0.495) );
+}
+
+.registro-container h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    color: #070707a1;
+}
+
+.form-group input {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    border: 1px solid rgb(212,175,55);
+    border-radius: 5px;
+}
+
+.form-group input:focus {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-color: rgb(10,40,120);
+    outline: none;
+}
+
+.form-group button {
+   padding: 10px;
+    background-color: rgba(10, 39, 120, 0.11);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: rgb(212,175,55);
+}
+
+.texto-pie {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.texto-pie a {
+    color: rgb(212,175,55);
+}
