@@ -1,0 +1,86 @@
+
+    header {
+      background-color:#d4af37a2;
+      padding: 5px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    nav {
+      display: flex;
+      background-color: rgba(237, 221, 168, 0.848);
+      padding: 8px;
+      justify-content: space-around;
+    }
+
+    nav button {
+      background: none;
+      border: none;
+      font-size: 15px;
+      cursor: pointer;
+      padding: 0%;
+      color: black;
+      background-color: transparent;
+      transition: all 0.3s ease;
+      border-radius: 8px;
+      
+
+    }
+
+    .container {
+      display: flex;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      background-color: rgba(212, 175, 55, 0.189);
+    }
+
+    .sidebar {
+      width: 20%;
+      background: rgba(212, 175, 55, 0.196);
+      padding: 15px;
+    }
+
+    .main-content {
+      width: 80%;
+      padding: 20px;
+    }
+
+    .evidencia {
+      background: rgba(212, 175, 55, 0.51);
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+
+    .textarea-message {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 15px;
+    }
+
+    .roles {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 15px;
+    }
+
+    .roles div {
+      text-align: center;
+    }
+
+    .direccionamiento select {
+      width: 100%;
+      margin-top: 10px;
+    }
+.logonav{
+    width: 110px;
+    height: 70px;
+}
+.perfil-img{
+  margin: 8px ;
+  width: 100px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit:fill;
+  box-shadow: 8px 8px 8px rgba(212, 175, 55, 0.577)
+
+}
