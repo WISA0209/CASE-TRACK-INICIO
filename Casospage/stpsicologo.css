@@ -1,0 +1,13 @@
+header{
+    font-size: larger;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display:center;
+
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+
+}
