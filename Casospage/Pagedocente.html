@@ -5,46 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Docente</title>
     <link rel="stylesheet" href="stdocente.css">
-    <script src="docenjs.js" defer></script>
+    <script src="/js/dare.js" defer></script>
 </head>
 <body>
    <header>DOCENTE</header>
   <nav>
     <img src="/Imagenes/LOGOSF.png" class="logonav">
-    <button>CONTACTO</button>
     <button>INICIO</button>
-    <button>ESTADO DE CASOS</button>
+    <div class="dropdown">
+    <button >ESTADO DE CASOS</button>
+    <div class="dropdown-content">
+      <a href="#">Casos en proceso</a>
+      <a href="#">Casos finalizados</a>
+      <a href="#">Casos pendientes</a>
+    </div>
+    </div>
+    <div class="dropdown">
     <button>GUÍAS</button>
+    <div class="dropdown-content">
+      <a href="#">* Si tu caso requiere pasar por psicologia elige un profesional y
+        comparte redirecciona el caso</a>
+      <a href="#">* Notifica las actualizaciones y procesos de cada caso</a>
+      <a href="#">* Configura tu pantalla con plena accesibilidad</a>
+      </a>
+    </div>
+    </div>
     <button>PROTOCOLO DE ACTUACIÓN</button>
-    <button>EQUIPO DE TRABAJO</button>
+    <div class="dropdown">
+    <button class="dropbtn">EQUIPO DE TRABAJO</button>
+    <div class="dropdown-content">
+      <a href="#">Alexander Rosales</a>
+      <a href="#">Ulices Regnier</a>
+      <a href="#">Astrid Correa</a>
+      <a href="#">Violet Cotican</a>
+    </div>
+    </div>
     <button>CONFIGURACIÓN</button>
-    <button>TEST INCIDENCIA</button>
   </nav>
   <div class="perfil-container">
     <!--Imagen de usuario-->
     <img src="/Imagenes/usuario.jpg" alt="usuario" class="perfil-img" id="previoperfil">
 <!--Boton flotante para cargar img-->
-<label for="profileUpload" class="upload-label"></label>
+<label for="profileUpload" class="upload-label">Da click</label>
 <input type="file" id="profileUpload" accept="image/*">  
 </div>
 <br><br>
-    <class class="main-content">
+    <main class="main-content">
       <div class="evidencia">
         <h3>Evidencia</h3>
         <form action="tu-servidor.php" method="POST" enctype="multipart/form-data">
   <label for="archivo">Selecciona tu evidencia: </label>
   <input type="file" id="archivo" name="archivo" accept="image/*,audio/*,video/*">
 </form>
-
       </div>
 
       <textarea class="textarea-message">
 Pedro, tu caso está en proceso junto con el grupo directivo, recuerda que no estás solo en este proceso...
       </textarea>
-      </class>
-    </div>
-  </div> 
-  <input type="time">
-  <input type="date">
+      </main>
+    <div id="contenedor">
+    <div id="reloj">--:--:--</div>
+    <div id="fecha">Cargando...</div>
+    <div id="estado">Usando hora local...</div>
+  </div>
 </body>
 </html>
